@@ -1,9 +1,10 @@
-subscription_id = "617d22e1-cf4e-4f99-ba24-7de58e4c6e00"
-domain          = "cbs.fiserv.net"
-domainadmin     ="djoin@cbs.fiserv.net"
-domainpassword  ="4T2U==x-e%H2ab(R"
-domainuser      = "adminwl@cbs.fiserv.net"
-oupath          ="OU=vRealize,OU=Servers,OU=Virtual Machines,OU=ORL,OU=US,OU=CBS,DC=cbs,DC=fiserv,DC=net"
+subscription_id = "58a62efd-fc92-4623-8821-d743df1e8c45"
+domains = ["itint.com", "anotherdomain.com"]
+domainadmins = ["svc_ansible_win@itint.com", "svc_ansible_win@anotherdomain.com"]
+domainpasswords = [";Z@KqZ^A1fXq' DjQN%m", ";Z@KqZ^A1fXq' DjQN%m"]
+domainusers = ["lnkjenkinsdevops@itint.com", "lnkjenkinsdevops@anotherdomain.com"]
+oupaths = ["OU=SRV - vRealize,DC=ITINT,DC=com", "OU=SRV - vRealize,DC=ANOTHER,DC=com"]
+
 
 vm_list =[
     {

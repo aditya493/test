@@ -49,23 +49,32 @@ variable "vm_list"{
     default = null
 }
 
-variable "domain" {
-    type = string
+variable "subscription_id" {
+  type        = string
+  description = "Subscription ID"
 }
 
-variable "domainadmin"{
-    type = string
+variable "domains" {
+  type        = list(string)
+  description = "List of domains"
 }
 
-
-variable "domainpassword"{
-    type = string
+variable "domainadmins" {
+  type        = list(string)
+  description = "List of domain admins"
 }
 
-variable "domainuser"{
-    type = string
+variable "domainpasswords" {
+  type        = list(string)
+  description = "List of domain passwords"
 }
 
-variable "oupath" {
-    type = string
+variable "domainusers" {
+  type        = list(string)
+  description = "List of domain users"
+}
+
+variable "oupaths" {
+  type        = list(string)
+  description = "List of OU paths"
 }
